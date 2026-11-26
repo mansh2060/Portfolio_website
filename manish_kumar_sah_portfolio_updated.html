@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Manish Kumar Sah — AI-assisted software engineer and full-stack developer building practical applications with Python, TypeScript, React, Django, APIs, and automation.">
+<meta name="theme-color" content="#0a0e13">
+<title>Manish Kumar Sah | AI-Assisted Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e13;--panel:#111925;--panel2:#151f2d;--line:#263448;--text:#e5edf7;--muted:#9aaabd;--subtle:#6d8097;--green:#65e6a2;--cyan:#55d9ee;--purple:#b6a0ff;--mono:'JetBrains Mono',monospace;--sans:'Inter',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}body{background:var(--bg);color:var(--text);font:15px/1.7 var(--sans)}a{color:inherit}::selection{background:#65e6a233}
+nav{position:fixed;inset:0 0 auto;z-index:20;height:64px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;background:#0a0e13eF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.logo{font:600 16px var(--mono);color:var(--green);text-decoration:none}.navlinks{display:flex;gap:22px;list-style:none}.navlinks a{font:12px var(--mono);color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--green)}
+.wrap{width:min(1040px,90%);margin:auto}.hero{min-height:94vh;display:flex;flex-direction:column;justify-content:center;padding:130px 0 80px}.eyebrow,.section-kicker{font:11px var(--mono);letter-spacing:1.8px;text-transform:uppercase;color:var(--green)}.availability{display:inline-flex;align-items:center;gap:9px;border:1px solid #65e6a244;background:#65e6a20c;padding:5px 12px;border-radius:30px;width:max-content;margin-bottom:26px;font:11px var(--mono);color:var(--green)}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px #65e6a2}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.08;letter-spacing:-3px;margin-bottom:14px}.role{font:clamp(14px,2vw,19px) var(--mono);color:var(--cyan);margin-bottom:22px}.intro{max-width:720px;color:var(--muted);font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0}.btn{display:inline-flex;padding:10px 17px;border-radius:6px;text-decoration:none;font:12px var(--mono);border:1px solid var(--line)}.primary{background:var(--green);border-color:var(--green);color:#08120d;font-weight:600}.secondary{color:var(--text)}.secondary:hover{border-color:var(--green);color:var(--green)}.quick{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.quick span,.tag{font:10px var(--mono);color:var(--muted);border:1px solid var(--line);background:var(--panel);padding:5px 9px;border-radius:4px}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-kicker{margin-bottom:8px}.section-title{font-size:30px;letter-spacing:-.8px;margin-bottom:28px}.about-copy{max-width:780px;color:var(--muted)}.about-copy p+p{margin-top:13px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}.card.featured{border-color:#65e6a255;background:linear-gradient(140deg,#14231f,#111925 65%)}.card-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.label{font:10px var(--mono);letter-spacing:1px;color:var(--subtle);text-transform:uppercase}.pill{font:10px var(--mono);padding:4px 8px;border-radius:4px;background:#65e6a214;color:var(--green);border:1px solid #65e6a233}.card h3{font-size:18px}.stack{font:11px var(--mono);color:var(--cyan)}.card p,.card li{font-size:13px;color:var(--muted)}.card ul{padding-left:18px;display:grid;gap:6px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:5px}.tag{font-size:10px;padding:3px 7px}.card-link{font:11px var(--mono);color:var(--green);text-decoration:none;margin-top:4px}.card-link:hover{text-decoration:underline}
+.skillgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.skill{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px}.skill h3{font:12px var(--mono);color:var(--cyan);margin-bottom:12px}.skill p{font-size:13px;color:var(--muted)}
+.timeline{display:grid;gap:22px}.item{border-left:2px solid var(--line);padding:0 0 2px 20px;position:relative}.item:before{content:"";position:absolute;left:-5px;top:7px;width:8px;height:8px;background:var(--green);border-radius:50%}.itemhead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.item h3{font-size:15px}.date{font:11px var(--mono);color:var(--subtle)}.item .sub{font:11px var(--mono);color:var(--cyan);margin:3px 0 8px}.item p,.item li{font-size:13px;color:var(--muted)}.item ul{padding-left:18px}
+.achievement{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:17px 19px;margin-bottom:12px}.achievement strong{display:block;font-size:14px}.achievement span{font:11px var(--mono);color:var(--subtle)}.achievement p{font-size:13px;color:var(--muted);margin-top:5px}
+.edu{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:23px}.edu h3{font-size:16px}.edu p{font-size:13px;color:var(--muted)}.gpa{text-align:right;font:600 22px var(--mono);color:var(--green)}.gpa small{display:block;font:10px var(--mono);color:var(--subtle)}
+.contact{display:flex;flex-wrap:wrap;gap:12px}.contact a{font:12px var(--mono);text-decoration:none;color:var(--muted);background:var(--panel);border:1px solid var(--line);padding:12px 15px;border-radius:6px}.contact a:hover{color:var(--green);border-color:var(--green)}
+footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var(--subtle);font:10px var(--mono)}
+@media(max-width:760px){.navlinks{gap:10px}.navlinks a{font-size:10px}.grid{grid-template-columns:1fr}.skillgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{letter-spacing:-2px}}
+@media(max-width:520px){nav{padding:0 15px}.navlinks{gap:8px}.navlinks li:nth-child(3){display:none}.wrap{width:88%}.hero{min-height:auto;padding:125px 0 70px}.hero h1{font-size:43px}.intro{font-size:14px}.section-title{font-size:25px}.skillgrid{grid-template-columns:1fr}.itemhead{display:block}.date{display:block;margin-top:4px}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">&lt; MKS /&gt;</a>
+  <ul class="navlinks">
+    <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<header class="wrap hero" id="home">
+  <div class="availability"><span class="dot"></span> OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES</div>
+  <p class="eyebrow">Python · TypeScript · AI-assisted engineering</p>
+  <h1>Manish Kumar Sah</h1>
+  <div class="role">AI-Assisted Software Engineer <span style="color:var(--subtle)">/</span> Full-Stack Developer</div>
+  <p class="intro">I build practical software for real-world problems using Python, TypeScript, React, Django and REST APIs. I use AI coding tools as part of my development workflow while focusing on understanding requirements, reviewing generated code, testing functionality and debugging issues.</p>
+  <div class="actions">
+    <a class="btn primary" href="mailto:heroicmanish017@gmail.com">Contact Me</a>
+    <a class="btn secondary" href="#projects">Explore Projects</a>
+    <a class="btn secondary" href="https://github.com/mansh2060" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+  <div class="quick">
+    <span>Python</span><span>TypeScript</span><span>React</span><span>Django & DRF</span><span>Node.js / Express</span><span>Playwright</span><span>PyTorch</span><span>SQL</span>
+  </div>
+</header>
+
+<section id="about"><div class="wrap">
+  <p class="section-kicker">01 / About</p><h2 class="section-title">Engineering with AI, ownership and curiosity</h2>
+  <div class="about-copy">
+    <p>I am a Computer Science graduate interested in software engineering, AI-assisted development and automation. I enjoy turning business requirements into working applications, connecting frontend and backend systems, and investigating issues that appear during development and deployment.</p>
+    <p>I work with AI coding tools such as Cursor, Claude and ChatGPT to explore implementation approaches and accelerate development. I treat generated code as a starting point: I review it, test it, debug it and refine it against the actual requirements.</p>
+    <p>My current focus is strengthening software engineering fundamentals, automated testing, cloud infrastructure and AI agent development.</p>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <p class="section-kicker">02 / Selected work</p><h2 class="section-title">Projects I have built and explored</h2>
+  <div class="grid">
+    <article class="card featured">
+      <div class="card-top"><span class="label">Flagship · Business application</span><span class="pill">Ongoing</span></div>
+      <h3>NS Auto Center</h3><div class="stack">React · TypeScript · Node.js · Express · MongoDB</div>
+      <p>A business automation platform for a two-wheeler garage, bringing customer-facing services and day-to-day shop workflows into one application.</p>
+      <ul>
+        <li>Worked from business requirements to feature design and implementation using an AI-assisted development workflow.</li>
+        <li>Built workflows for service bookings, product catalogue, billing and challans, customer records, orders, rewards and payment tracking.</li>
+        <li>Used Cursor, Claude and ChatGPT to explore solutions, generate and refine code, investigate bugs and support documentation.</li>
+        <li>Reviewed and tested generated implementations, debugged integration and production issues, and worked with Vercel, Render and MongoDB Atlas deployments.</li>
+      </ul>
+      <div class="tags"><span class="tag">AI-assisted development</span><span class="tag">REST APIs</span><span class="tag">Production debugging</span><span class="tag">Business workflows</span></div>
+      <a class="card-link" href="https://nsautocenter.com.np/" target="_blank" rel="noopener">Project website ↗</a>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="label">Automation · Testing</span><span class="pill">Project</span></div>
+      <h3>Browser Workflow Automation</h3><div class="stack">JavaScript · Playwright</div>
+      <p>Automated browser workflows with an emphasis on reusable test structure and debugging.</p>
+      <ul>
+        <li>Organized browser automation using the Page Object Model.</li>
+        <li>Worked on signup workflow automation and browser interactions.</li>
+        <li>Used Playwright Inspector to inspect and debug test execution.</li>
+      </ul>
+      <div class="tags"><span class="tag">Playwright</span><span class="tag">Page Object Model</span><span class="tag">Test automation</span></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="label">Deep learning · NLP</span><span class="pill">AI/ML project</span></div>
+      <h3>GPT-2-Style Transformer from Scratch</h3><div class="stack">Python · PyTorch</div>
+      <p>Implemented a GPT-2-style language model to understand the building blocks of autoregressive language modelling.</p>
+      <ul>
+        <li>Implemented token and positional embeddings, self-attention and multi-head attention.</li>
+        <li>Explored feed-forward layers, residual connections and layer normalization.</li>
+        <li>Worked with the model training and evaluation workflow.</li>
+      </ul>
+      <div class="tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">LLMs</span><span class="tag">Deep learning</span></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="label">Hackathon · Conversational AI</span><span class="pill">Winner</span></div>
+      <h3>UniMate — University Support Chatbot</h3><div class="stack">Conversational AI · Product development</div>
+      <p>A university chatbot concept designed to help first-year students find answers to common campus and university questions.</p>
+      <ul>
+        <li>Designed the assistant around student onboarding and frequently asked questions.</li>
+        <li>Won the nosu.io Hackathon 2025.</li>
+      </ul>
+      <div class="tags"><span class="tag">Chatbot</span><span class="tag">User-focused design</span><span class="tag">Hackathon</span></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="label">Data analysis · NLP</span><span class="pill">Project work</span></div>
+      <h3>BlackCoffer — Business Intelligence Text Pipeline</h3><div class="stack">Python · Web scraping · Text analysis</div>
+      <p>Worked on a data extraction and text analysis pipeline for business intelligence.</p>
+      <ul>
+        <li>Scraped and processed content from 150+ URLs.</li>
+        <li>Performed text analysis, including sentiment and polarity analysis, to prepare structured outputs.</li>
+      </ul>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Data processing</span><span class="tag">NLP</span></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top"><span class="label">Frontend · React</span><span class="pill">Learning project</span></div>
+      <h3>React Chatbot Interface</h3><div class="stack">React · JavaScript · CSS</div>
+      <p>A conversational interface exploring component-based UI development and state management.</p>
+      <ul>
+        <li>Built reusable chat message, input and reply components.</li>
+        <li>Practised React state, effects, refs, local storage and loading states.</li>
+      </ul>
+      <div class="tags"><span class="tag">React</span><span class="tag">Hooks</span><span class="tag">Component design</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <p class="section-kicker">03 / Technical toolkit</p><h2 class="section-title">Skills and technologies</h2>
+  <div class="skillgrid">
+    <div class="skill"><h3>Programming</h3><p>Python, JavaScript, TypeScript, SQL</p></div>
+    <div class="skill"><h3>Frontend</h3><p>HTML, CSS, React</p></div>
+    <div class="skill"><h3>Backend & APIs</h3><p>Django, Django REST Framework, Node.js, Express.js, REST APIs</p></div>
+    <div class="skill"><h3>Databases & Tools</h3><p>MongoDB, MySQL, Git, GitHub</p></div>
+    <div class="skill"><h3>AI & Data</h3><p>PyTorch, Pandas, NLP fundamentals, LLMs, prompt engineering</p></div>
+    <div class="skill"><h3>AI-assisted development</h3><p>Cursor, Claude, ChatGPT, AI-generated code review and refinement</p></div>
+    <div class="skill"><h3>Testing & Automation</h3><p>Playwright, browser automation, debugging</p></div>
+    <div class="skill"><h3>Deployment</h3><p>Vercel, Render, MongoDB Atlas; familiarity with deployment workflows</p></div>
+    <div class="skill"><h3>Computer Science</h3><p>Data Structures & Algorithms, OOP, DBMS, software engineering fundamentals</p></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <p class="section-kicker">04 / Experience & training</p><h2 class="section-title">Learning through practical work</h2>
+  <div class="timeline">
+    <article class="item">
+      <div class="itemhead"><h3>AI/ML Intern Training Programme — Dexter Platform LLC</h3><span class="date">Feb 2025 – May 2025 · Remote</span></div>
+      <div class="sub">AI / Machine Learning Training</div>
+      <p>Completed hands-on training covering machine learning, deep learning, NLP, LLM concepts, model training, evaluation and fine-tuning. Explored Transformer architecture and implemented a GPT-2-style model using Python and PyTorch.</p>
+    </article>
+    <article class="item">
+      <div class="itemhead"><h3>NS Auto Center — Business Automation Project</h3><span class="date">2025 – Present</span></div>
+      <div class="sub">AI-assisted full-stack development</div>
+      <p>Worked on a real business application, translating operational requirements into software workflows and using AI coding tools to support implementation, testing, debugging and deployment.</p>
+    </article>
+    <article class="item">
+      <div class="itemhead"><h3>BlackCoffer — Data Analysis Project</h3><span class="date">2025</span></div>
+      <div class="sub">Data extraction & text analysis</div>
+      <p>Worked on extracting and analysing text from 150+ URLs, including sentiment and polarity analysis.</p>
+    </article>
+  </div>
+</div></section>
+
+<section id="achievements"><div class="wrap">
+  <p class="section-kicker">05 / Achievements</p><h2 class="section-title">Milestones</h2>
+  <div class="achievement"><strong>GATE DA 2026 — Qualified</strong><span>Data Science & Artificial Intelligence</span><p>Qualified the Graduate Aptitude Test in Engineering in the Data Science and Artificial Intelligence paper.</p></div>
+  <div class="achievement"><strong>Hackathon Winner — nosu.io Hackathon 2025</strong><span>UniMate · University support chatbot</span><p>Won the hackathon with a chatbot concept designed to help first-year students navigate university information.</p></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <p class="section-kicker">06 / Education</p><h2 class="section-title">Academic background</h2>
+  <div class="edu">
+    <div><h3>B.Tech in Computer Science</h3><p>GITAM (Gandhi Institute of Technology and Management), Hyderabad</p><p style="margin-top:8px">Relevant foundation: programming, data structures, algorithms, databases and computer science fundamentals.</p></div>
+    <div class="gpa">7.64<small>CGPA · 2026 graduate</small></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <p class="section-kicker">07 / Contact</p><h2 class="section-title">Let's build something useful</h2>
+  <p class="about-copy" style="margin-bottom:22px">I'm interested in software engineering, AI-assisted development, automation and full-stack engineering opportunities. Feel free to reach out to discuss projects or roles.</p>
+  <div class="contact">
+    <a href="mailto:heroicmanish017@gmail.com">Email ↗</a>
+    <a href="https://github.com/mansh2060" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/manish-kumar-b7522a23b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</div></section>
+</main>
+<footer>Manish Kumar Sah · AI-Assisted Software Engineering · 2026</footer>
+</body>
+</html>
